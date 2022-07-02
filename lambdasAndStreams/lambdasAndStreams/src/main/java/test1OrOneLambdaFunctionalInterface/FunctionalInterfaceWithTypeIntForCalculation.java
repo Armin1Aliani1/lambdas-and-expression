@@ -1,7 +1,7 @@
-package test1OrOneLambda;
+package test1OrOneLambdaFunctionalInterface;
 
 @FunctionalInterface
-public interface Calculation {
+public interface FunctionalInterfaceWithTypeIntForCalculation {
     int calculate(int a, int b);
 
     /*default void print(){

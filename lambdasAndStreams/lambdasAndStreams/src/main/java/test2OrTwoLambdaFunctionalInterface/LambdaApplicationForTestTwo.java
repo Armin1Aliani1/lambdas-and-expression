@@ -1,10 +1,10 @@
-package test2OrTwoLambda;
+package test2OrTwoLambdaFunctionalInterface;
 
 public class LambdaApplicationForTestTwo {
     public static void main(java.lang.String[] args) {
 
         String myStrOne = "Hello ";
-        MyString stringOne = (String w, String z) -> {
+        FunctionalInterfaceWithTypeStringForTotalStrings stringOne = (String w, String z) -> {
             String myStrTwo = w + " " + z;
             return myStrOne + myStrTwo;
         };
