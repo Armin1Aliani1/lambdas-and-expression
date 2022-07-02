@@ -1,4 +1,4 @@
-package testOneLambda;
+package test1OrOneLambda;
 
 public class LambdaApplicationForTestOne {
     public static void main(String[] args) {

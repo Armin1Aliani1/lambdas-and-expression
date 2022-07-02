@@ -1,4 +1,4 @@
-package testTwoLambda;
+package test2OrTwoLambda;
 
 public class LambdaApplicationForTestTwo {
     public static void main(java.lang.String[] args) {

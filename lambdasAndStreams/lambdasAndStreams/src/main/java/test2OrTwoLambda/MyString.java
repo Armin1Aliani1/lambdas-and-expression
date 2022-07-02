@@ -1,4 +1,4 @@
-package testTwoLambda;
+package test2OrTwoLambda;
 
 @FunctionalInterface
 public interface MyString {

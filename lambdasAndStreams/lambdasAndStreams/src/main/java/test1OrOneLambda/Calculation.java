@@ -1,4 +1,4 @@
-package testOneLambda;
+package test1OrOneLambda;
 
 @FunctionalInterface
 public interface Calculation {
