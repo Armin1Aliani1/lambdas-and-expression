@@ -16,6 +16,10 @@ public class LambdaApplicationForTestThree {
 
         thisMethodForSearchFullName(strOne, strTwo);
 
+        System.out.println();
+
+        thisMethodTestForSearchFullName(strOne, strTwo);
+
     }
 
     private static void thisMethodForSearchFullName(String strOne, String strTwo) {
@@ -31,7 +35,7 @@ public class LambdaApplicationForTestThree {
             boolean ValidOne = stringPredicateOne.test(strThree);
             boolean ValidTwo = stringPredicateTwo.test(strThree);
             System.out.println("Your first name valid : " + ValidOne);
-            System.out.println("Your first name valid : " + ValidTwo);
+            System.out.println("Your last name valid : " + ValidTwo);
 
             String Word1[] = strThree.split("\\s+");
             for (int i = 0; i < Word1.length; i++) {
@@ -53,5 +57,15 @@ public class LambdaApplicationForTestThree {
         } else {
             System.out.println("NOT FOUND!");
         }
+    }
+
+    private static void thisMethodTestForSearchFullName(String strOne, String strTwo) {
+        Predicate<String> stringPredicateTestOne = s -> s.contains(strOne);
+        Predicate<String> stringPredicateTestTwo = s -> s.contains(strTwo);
+        String strTest = "Arminaliani";
+        boolean validTestOne = stringPredicateTestOne.test(strTest);
+        boolean validTestTwo = stringPredicateTestTwo.test(strTest);
+        System.out.println("Valid : " + validTestOne);
+        System.out.println("Valid : " + validTestTwo);
     }
 }
