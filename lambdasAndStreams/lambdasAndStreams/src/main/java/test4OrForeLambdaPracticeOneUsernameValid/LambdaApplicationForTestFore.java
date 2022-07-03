@@ -16,13 +16,13 @@ public class LambdaApplicationForTestFore {
 
     private static void checkForUsernameValid(String strOne) {
 
-        Predicate<String> stringPredicateOne = s -> (s.length() > 0);
-        Predicate<String> stringPredicateTwo = s -> (s != null && s.length() >= 5 && s.length() <= 10);
+        Predicate<String> stringPredicateOne = s -> (s != null && s.length() >= 5 && s.length() <= 10);
+        Predicate<String> stringPredicateTwo = s -> (s.length() > 0);
         Predicate<String> stringPredicateThree = s -> (s.equalsIgnoreCase("Armin"));
 
         Predicate<String> stringPredicateFore = stringPredicateOne.and(stringPredicateTwo).and(stringPredicateThree);
 
-        boolean validOne = stringPredicateTwo.test(strOne);
+        boolean validOne = stringPredicateOne.test(strOne);
 
         System.out.println("Username valid : " + validOne);
 
