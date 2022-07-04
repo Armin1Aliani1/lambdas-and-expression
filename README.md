@@ -1,2 +1,2 @@
-# lambdas-and-streams
-Lambdas and Streams
+# lambdas-and-expression
+Lambdas and Expression
