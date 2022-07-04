@@ -26,6 +26,7 @@ public class LambdaApplicationForTestFore {
 
         System.out.println("Username valid : " + validOne);
 
+// Ternary in java
 //   Is condition if :  (condition)? "true"                                    :((else))  "false"
         String result = (validOne) ? "Length username is : " + strOne.length() : "Username should not be empty or less than 5 characters or more than 10 characters";
 
